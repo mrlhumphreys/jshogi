@@ -224,6 +224,8 @@ class GameState {
   performMove(from, to, captured) {
     if (from.id != to.id) {
       if (exists(captured)) {
+        let hand = this.hands.find(function(h) { return h.playerNumber === from.piece.playerNumber; }); 
+        hand.pushPiece(to.piece);
         captured.removePiece();
       }
       let fromPiece = from.piece;

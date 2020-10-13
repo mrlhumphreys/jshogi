@@ -90,6 +90,18 @@ describe('Move', () => {
     });
 
     describe('piece in hand is selected', () => {
+      describe('when destination is occupied', () => {
+        it('must return a SquareOccupied result', () => {
+          let match = fixtures('selectedPieceInHandMatch');
+          let move = new Move({ touchedId: '13', playerNumber: 1, match: match });
+
+          let result = move.result;
+          let expected = { name: 'SquareOccupied', message: 'Piece must be dropped on empty square.' }; 
+
+          expect(result).toEqual(expected);
+        });
+      });
+
       describe('when drop prevents legal moves', () => {
         it('must return a NoLegalMoves result', () => {
           let match = fixtures('selectedPieceInHandMatch');

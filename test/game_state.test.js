@@ -845,7 +845,7 @@ describe('GameState', () => {
       });
 
       describe('and there is capture', () => {
-        it('moves the piece and removes the captured piece', () => {
+        it('moves the piece and adds the captured piece to hand', () => {
           let gameState = new GameState({
             current_player_number: 1,
             squares: [
@@ -865,10 +865,13 @@ describe('GameState', () => {
           let result = gameState.performMove(from, to, captured);
           let newFrom = gameState.squares.findById('94');
           let newTo = gameState.squares.findById('93');
+          let hand = gameState.hands.find(function(h) { return h.playerNumber === 1; });
 
           expect(result).toBe(true);
           expect(newFrom.piece).toBe(null);
           expect(newTo.piece.id).toEqual(1);
+          expect(hand.pieces.length).toEqual(1);
+          expect(hand.pieces[0].id).toEqual(2);
         });
       });
     });

@@ -739,7 +739,7 @@ const fixtureDefinitions = {
           { id: '47', x: 5, y: 6, piece: { id: 26, player_number: 1, type: 'fuhyou' } },
           { id: '37', x: 6, y: 6, piece: { id: 27, player_number: 1, type: 'fuhyou' } },
           { id: '27', x: 7, y: 6, piece: { id: 28, player_number: 1, type: 'fuhyou' } },
-          { id: '17', x: 8, y: 6, piece: { id: 29, player_number: 1, type: 'fuhyou' } },
+          { id: '17', x: 8, y: 6, piece: null },
 
           { id: '98', x: 0, y: 7, piece: null },
           { id: '88', x: 1, y: 7, piece: { id: 30, player_number: 1, type: 'kakugyou' } },

@@ -49,7 +49,9 @@ class Move {
   }
 
   get _dropResult() {
-    if (this._preventsLegalMoves) {
+    if (this._squareOccupied) {
+      return { name: 'SquareOccupied', message: 'Piece must be dropped on empty square.' };
+    } else if (this._preventsLegalMoves) {
       return { name: 'NoLegalMoves', message: 'Piece cannot move if placed on that square.' };
     } else if (this._putsTwoFuhyouInFile) {
       return { name: 'TwoFuhyouInFile', message: 'Cannot place two fuhyou in the same file.' };
@@ -94,6 +96,10 @@ class Move {
 
   get _selectedPieceInHand() {
     return this.match.gameState.selectedPieceInHand;
+  }
+
+  get _squareOccupied() {
+    return this._touched.occupied();
   }
 
   get _preventsLegalMoves() {
