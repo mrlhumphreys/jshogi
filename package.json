@@ -2,7 +2,7 @@
   "name": "@mrlhumphreys/jshogi",
   "author": "Mark Humphreys <mark@mrlhumphreys.com> (https://github.com/mrlhumphreys)",
   "description": "Shogi game state and move validation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "keywords": [
     "Shogi",

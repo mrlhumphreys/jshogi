@@ -1,4 +1,5 @@
 import { exists } from './utils'
+import PromotionFactory from './promotion_factory'
 
 /** A move */
 class Move {
@@ -41,7 +42,7 @@ class Move {
       return { name: 'OuInCheck', message: 'Move puts ou in check.' };
     } else if (!this._selectedSquare.piece.canMove(this._selectedSquare, this._touched, this.match.gameState)) {
       return { name: 'MoveInvalid', message: 'Piece cannot move.' };
-    } else if (this._pieceMovesToPromotionZone) {
+    } else if (this._pieceCanPromote) {
       return { name: 'PieceMovedToPromotionZone', message: 'Piece can promote.' };
     } else {
       return { name: 'MoveValid', message: '' };
@@ -82,8 +83,9 @@ class Move {
     return dup.inCheck(this.match.gameState.currentPlayerNumber);
   }
 
-  get _pieceMovesToPromotionZone() {
-    return this.match.gameState.pieceMovedToPromotionZone(this._selectedSquare, this._touched);
+  get _pieceCanPromote() {
+    let factory = new PromotionFactory(this._selectedSquare.piece);
+    return factory.promotable && this.match.gameState.pieceMovedToPromotionZone(this._selectedSquare, this._touched);
   }
 
   get _touched() {

@@ -188,6 +188,18 @@ describe('Move', () => {
         });
       });
 
+      describe('promoted piece moves to promotion zone', () => {
+        it('must return a MoveValid result', () => {
+          let match = fixtures('promotedMoveToPromotionZoneMatch');
+          let move = new Move({ touchedId: '73', playerNumber: 1, match: match });
+
+          let result = move.result;
+          let expected = { name: 'MoveValid', message: '' }; 
+
+          expect(result).toEqual(expected);
+        });
+      });
+
       describe('piece cannot move that way', () => {
         it('must return a MoveInvalid result', () => {
           let match = fixtures('selectedMatch');
