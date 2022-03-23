@@ -1,7 +1,7 @@
 import GameState from '../src/game_state'
 import Square from '../src/square'
-import Fuhyou from '../src/fuhyou'
-import Tokin from '../src/tokin'
+import Fuhyou from '../src/pieces/fuhyou'
+import Tokin from '../src/pieces/tokin'
 
 describe('GameState', () => {
   describe('asJson', () => {

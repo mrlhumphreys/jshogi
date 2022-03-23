@@ -1,5 +1,5 @@
-import Tokin from '../src/tokin'
-import KinBase from '../src/kin_base'
+import Tokin from '../../src/pieces/tokin'
+import KinBase from '../../src/pieces/kin_base'
 
 describe('Tokin', () => {
   it('inherits from KinBase', () => {

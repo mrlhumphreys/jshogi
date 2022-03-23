@@ -1,5 +1,5 @@
 import Match from '../src/match'
-import Tokin from '../src/tokin'
+import Tokin from '../src/pieces/tokin'
 import fixtures from './fixtures'
 
 describe('Match', () => {

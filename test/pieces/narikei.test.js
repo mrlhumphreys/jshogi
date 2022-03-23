@@ -1,5 +1,5 @@
-import Narikei from '../src/narikei'
-import KinBase from '../src/kin_base'
+import Narikei from '../../src/pieces/narikei'
+import KinBase from '../../src/pieces/kin_base'
 
 describe('Narikei', () => {
   it('inherits from KinBase', () => {

@@ -1,6 +1,6 @@
 import PromotionFactory from '../src/promotion_factory'
-import Fuhyou from '../src/fuhyou'
-import Tokin from '../src/tokin'
+import Fuhyou from '../src/pieces/fuhyou'
+import Tokin from '../src/pieces/tokin'
 
 describe('PromotionFactory', () => {
   describe('promotable', () => {

@@ -1,6 +1,6 @@
-import Kyousha from '../src/kyousha'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Kyousha from '../../src/pieces/kyousha'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Kyousha', () => {
   describe('destinations', () => {

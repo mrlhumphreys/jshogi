@@ -1,6 +1,6 @@
-import Hisha from '../src/hisha'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Hisha from '../../src/pieces/hisha'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Hisha', () => {
   describe('destinations', () => {

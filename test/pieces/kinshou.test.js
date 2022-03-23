@@ -1,5 +1,5 @@
-import Kinshou from '../src/kinshou'
-import KinBase from '../src/kin_base'
+import Kinshou from '../../src/pieces/kinshou'
+import KinBase from '../../src/pieces/kin_base'
 
 describe('Kinshou', () => {
   it('inherits from KinBase', () => {

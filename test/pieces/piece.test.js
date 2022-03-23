@@ -1,5 +1,5 @@
-import Piece from '../src/piece'
-import Square from '../src/square'
+import Piece from '../../src/pieces/piece'
+import Square from '../../src/square'
 
 describe("Piece", () => {
   describe('asJson', () => {

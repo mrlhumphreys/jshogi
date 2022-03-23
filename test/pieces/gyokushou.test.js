@@ -1,5 +1,5 @@
-import Gyokushou from '../src/gyokushou'
-import OuBase from '../src/ou_base'
+import Gyokushou from '../../src/pieces/gyokushou'
+import OuBase from '../../src/pieces/ou_base'
 
 describe('Gyokushou', () => {
   it('inherits from ouBase', () => {

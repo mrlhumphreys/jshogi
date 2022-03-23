@@ -1,6 +1,6 @@
-import Kakugyou from '../src/kakugyou'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Kakugyou from '../../src/pieces/kakugyou'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Kakugyou', () => {
   describe('destinations', () => {

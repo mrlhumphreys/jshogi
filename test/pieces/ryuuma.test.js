@@ -1,6 +1,6 @@
-import Ryuuma from '../src/ryuuma'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Ryuuma from '../../src/pieces/ryuuma'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Ryuuma', () => {
   describe('destinations', () => {

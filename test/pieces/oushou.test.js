@@ -1,5 +1,5 @@
-import Oushou from '../src/oushou'
-import OuBase from '../src/ou_base'
+import Oushou from '../../src/pieces/oushou'
+import OuBase from '../../src/pieces/ou_base'
 
 describe('Oushou', () => {
   it('inherits from ouBase', () => {

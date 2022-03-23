@@ -1,6 +1,6 @@
-import KinBase from '../src/kin_base'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import KinBase from '../../src/pieces/kin_base'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('KinBase', () => {
   describe('destinations', () => {

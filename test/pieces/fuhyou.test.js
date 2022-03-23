@@ -1,6 +1,6 @@
-import Fuhyou from '../src/fuhyou'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Fuhyou from '../../src/pieces/fuhyou'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Fuhyou', () => {
   describe('destinations', () => {

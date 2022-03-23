@@ -1,6 +1,6 @@
-import Keima from '../src/keima'
-import Square from '../src/square'
-import GameState from '../src/game_state'
+import Keima from '../../src/pieces/keima'
+import Square from '../../src/square'
+import GameState from '../../src/game_state'
 
 describe('Keima', () => {
   describe('destinations', () => {
